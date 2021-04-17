@@ -18,6 +18,8 @@
   --overlay-color: rgba(47, 48, 58, 0.8);
   --form-footer: rgba(255, 255, 255, 0.6);
   --form-shadow-footer: rgba(0, 0, 0, 0.15);
+  --form-modal-grey: rgba(33, 33, 33, 0.2);
+  --form-modal-textarea: rgba(117, 117, 117, 0.5);
 }
 /*цвет основного текста --> color: #757575; */
 /*цвет вторичного текста --> color: #212121; */
@@ -308,7 +310,59 @@ p {
   border: 1px solid var(--button-modal);
   border-radius: 50%;
 }
+.form-modal-wrapper {
+  padding: 40px;
+}
+.form-modal-text {
+  margin-bottom: 12px;
 
+  color: var(--secondary-color-text);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  font-style: normal;
+}
+.form-modal .form-modal-label {
+  display: flex;
+  flex-direction: column;
+}
+.form-modal .form-modal-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form-modal .form-modal-span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form-modal .form-modal-input {
+  height: 40px;
+  border: 1px solid var(--form-modal-grey);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-modal .form-modal-textarea {
+  height: 120px;
+  border: 1px solid var(--form-modal-grey);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-modal .form-modal-textarea::placeholder {
+  color: var(--form-modal-textarea);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-modal-label .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* /MODAL-WINDOW */
 
 /* QUALITY */

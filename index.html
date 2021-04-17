@@ -495,13 +495,44 @@
     <!-- /FOOTER -->
 
     <!-- MODAL-WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>-->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>
           <svg class="icon-close" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="form-modal-wrapper">
+          <p class="form-modal-text">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="form-modal">
+            <label class="form-modal-label">
+              <span class="form-modal-span">Имя</span>
+              <input type="text" name="text" class="form-modal-input" />
+            </label>
+            <label class="form-modal-label">
+              <span class="form-modal-span">Телефон</span>
+              <input type="tel" name="tel" class="form-modal-input" />
+              <span class="form-modal-icon">
+                <svg class="icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-modal-label">
+              <span class="form-modal-span">Почта</span>
+              <input type="email" name="email" class="form-modal-input" />
+            </label>
+            <label class="form-modal-label">
+              <span class="form-modal-span">Комментарий</span>
+              <textarea
+                name="feedback"
+                class="form-modal-textarea"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </form>
+        </div>
       </div>
     </div>
     <!-- /MODAL-WINDOW -->
