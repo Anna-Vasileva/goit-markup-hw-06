@@ -639,14 +639,12 @@ p {
 }
 .basement .form-label {
   display: flex;
-  flex-direction: column;
   margin: 0;
 }
 .basement .form-text {
   margin-bottom: 16px;
 }
 .basement .wrapper:nth-child(2) {
-  /* margin-right: 93px; */
   margin-right: auto;
 }
 .basement .wrapper:nth-child(3) {
