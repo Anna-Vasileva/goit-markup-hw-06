@@ -16,6 +16,8 @@
   --social-networks: #afb1b8;
   --social-networks-footer: rgba(255, 255, 255, 0.1);
   --overlay-color: rgba(47, 48, 58, 0.8);
+  --form-footer: rgba(255, 255, 255, 0.6);
+  --form-shadow-footer: rgba(0, 0, 0, 0.15);
 }
 /*цвет основного текста --> color: #757575; */
 /*цвет вторичного текста --> color: #212121; */
@@ -577,6 +579,7 @@ p {
 .basement-adds .link:focus {
   color: var(--accent-color);
 }
+
 .basement .container {
   display: flex;
   align-items: baseline;
@@ -611,6 +614,54 @@ p {
 }
 .basement-social-networks .item:not(:last-child) {
   margin-right: 10px;
+}
+
+.basement .form-input {
+  padding: 15px 16px;
+  margin-right: 12px;
+  height: 50px;
+  width: 358px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--form-footer);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px var(--form-shadow-footer));
+  color: var(--primary-white-color);
+
+  background-color: transparent;
+}
+.basement .form-input::placeholder {
+  color: var(--form-footer);
+}
+.basement .form-label {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.basement .form-text {
+  margin-bottom: 16px;
+}
+.basement .wrapper:nth-child(2) {
+  margin-right: 93px;
+}
+.basement .form-button {
+  padding: 10px 29px;
+  min-width: 200px;
+
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.basement .form-button-text {
+  display: flex;
+  align-items: center;
+}
+.basement .form-icon {
+  margin-left: 10px;
 }
 /* /FOOTER */
 
