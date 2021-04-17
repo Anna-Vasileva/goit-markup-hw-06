@@ -646,7 +646,10 @@ p {
   margin-bottom: 16px;
 }
 .basement .wrapper:nth-child(2) {
-  margin-right: 93px;
+  /* margin-right: 93px; */
+  margin-right: auto;
+}
+.basement .wrapper:nth-child(3) {
 }
 .basement .form-button {
   padding: 10px 29px;
