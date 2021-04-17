@@ -313,7 +313,7 @@ p {
 .form-modal-wrapper {
   padding: 40px;
 }
-.form-modal-text {
+.form-modal-wrapper .form-text {
   margin-bottom: 12px;
 
   color: var(--secondary-color-text);
@@ -323,33 +323,33 @@ p {
   font-weight: 700;
   font-style: normal;
 }
-.form-modal .form-modal-label {
+.form-modal .form-label {
   display: flex;
   flex-direction: column;
 }
-.form-modal .form-modal-label:not(:last-child) {
+.form-modal .form-label:not(:last-child) {
   margin-bottom: 10px;
 }
-.form-modal .form-modal-span {
+.form-modal .form-span {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.form-modal .form-modal-input {
+.form-modal .form-input {
   height: 40px;
   border: 1px solid var(--form-modal-grey);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.form-modal .form-modal-textarea {
+.form-modal .form-textarea {
   height: 120px;
   border: 1px solid var(--form-modal-grey);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.form-modal .form-modal-textarea::placeholder {
+.form-modal .form-textarea::placeholder {
   color: var(--form-modal-textarea);
   font-style: normal;
   font-weight: 400;
@@ -358,7 +358,7 @@ p {
   letter-spacing: 0.01em;
 }
 
-.form-modal-label .icon {
+.form-modal .icon {
   position: absolute;
   top: 0;
   left: 0;
