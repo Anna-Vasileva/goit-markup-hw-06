@@ -426,20 +426,24 @@ p {
   margin-bottom: 30px;
 }
 .form-modal .checkbox:checked + .policy-icon {
-  fill: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
+  border: none;
 }
 .form-modal .policy-icon {
   margin-right: 8px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 15px;
   border: 2px solid var(--secondary-color-text);
   border-radius: 2px;
+}
+.form-modal .policy-icon > .icon-check {
+  fill: transparent;
+}
+.form-modal .checkbox:checked + * .icon-check {
+  fill: var(--primary-white-color);
 }
 .form-modal .form-button {
   padding: 10px 56px;
