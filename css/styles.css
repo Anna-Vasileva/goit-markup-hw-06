@@ -365,6 +365,7 @@ p {
 .form-modal .form-input:focus,
 .form-modal .form-textarea:focus {
   border: 1px solid var(--accent-color);
+  outline: 0;
 }
 .form-modal .icon {
   position: absolute;
@@ -381,6 +382,7 @@ p {
   fill: var(--accent-color);
 }
 .form-modal .form-textarea {
+  padding-left: 16px;
   height: 120px;
   border: 1px solid var(--form-modal-grey);
   box-sizing: border-box;
